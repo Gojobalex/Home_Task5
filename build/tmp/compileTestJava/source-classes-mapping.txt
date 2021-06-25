@@ -1,8 +1,0 @@
-components/Calendar.java
- components.Calendar
-pages/PracticeFormElelemets.java
- pages.PracticeFormElelemets
-tests/PracticeForm.java
- tests.PracticeForm
-tests/PracticeFormJavaFaker.java
- tests.PracticeFormJavaFaker
