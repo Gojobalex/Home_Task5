@@ -17,13 +17,13 @@ public class PracticeFormElelemets {
             cityInput = $("[id=react-select-4-input]"),
             submitButton = $("#submit"),
     // Элементы проверки
-            StudentName = $x("//td[text()='Student Name']"),
-            StundetEmail = $x("//td[text()='Student Email']"),
-            Gender = $x("//td[text()='Gender']"),
-            UserMobile = $x("//td[text()='Mobile']"),
-            DateOfBirthday = $x("//td[text()='Date of Birth']"),
-            Address = $x("//td[text()='Address']"),
-            StateAndCity = $x("//td[text()='State and City']");
+            studentName = $x("//td[text()='Student Name']"),
+            stundetEmail = $x("//td[text()='Student Email']"),
+            gender = $x("//td[text()='Gender']"),
+            userMobile = $x("//td[text()='Mobile']"),
+            dateOfBirthday = $x("//td[text()='Date of Birth']"),
+            address = $x("//td[text()='Address']"),
+            stateAndCity = $x("//td[text()='State and City']");
 
     public void typeFirstName(String value) {
         firstNameInput.val(value);
@@ -62,7 +62,7 @@ public class PracticeFormElelemets {
     }
 
     // Методы проверки
-    public void StudentNameApprove(String firstName,
+    public void studentNameApprove(String firstName,
                                    String lastName,
                                    String userEmail,
                                    String userNumber,
@@ -72,13 +72,13 @@ public class PracticeFormElelemets {
                                    String currentAddress,
                                    String state,
                                    String city) {
-        StudentName.parent().shouldHave(text(firstName + " " + lastName));
-        StundetEmail.parent().shouldHave(text(userEmail));
-        Gender.parent().shouldHave(text("Male"));
-        UserMobile.parent().shouldHave(text(userNumber));
-        DateOfBirthday.parent().shouldHave(text(dayOfBithday + " " + monthOfBithday + "," + yearOfBithday));
-        Address.parent().shouldHave(text(currentAddress));
-        StateAndCity.parent().shouldHave(text(state + " " + city));
+        studentName.parent().shouldHave(text(firstName + " " + lastName));
+        stundetEmail.parent().shouldHave(text(userEmail));
+        gender.parent().shouldHave(text("Male"));
+        userMobile.parent().shouldHave(text(userNumber));
+        dateOfBirthday.parent().shouldHave(text(dayOfBithday + " " + monthOfBithday + "," + yearOfBithday));
+        address.parent().shouldHave(text(currentAddress));
+        stateAndCity.parent().shouldHave(text(state + " " + city));
     }
 }
 
