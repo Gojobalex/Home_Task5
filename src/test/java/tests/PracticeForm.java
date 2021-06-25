@@ -37,7 +37,7 @@ public class PracticeForm {
         practiceFormElelemets.typeCity(city);
         practiceFormElelemets.clickSubmit();
 
-        practiceFormElelemets.StudentNameApprove(firstName,lastName,userEmail,userNumber,dayOfBithday,monthOfBithday,yearOfBithday,currentAddress,state,city);
+        practiceFormElelemets.studentNameApprove(firstName,lastName,userEmail,userNumber,dayOfBithday,monthOfBithday,yearOfBithday,currentAddress,state,city);
 
     }
 }
